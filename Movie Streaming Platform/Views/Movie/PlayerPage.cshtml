@@ -1,0 +1,91 @@
+﻿@model Movie_Streaming_Platform.ViewModels.PlayerViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<section class="u-clearfix u-video u-block-control u-block-2530-1" custom-posts-hash="[[],[]]" data-section-properties="{&quot;margin&quot;:&quot;none&quot;,&quot;stretch&quot;:true}" data-id="2530" data-posts-content="[]" data-style="video-2" id="sec-d82f" data-source="Sketch" style="" data-block="589" data-block-selected="true">
+    <div class="u-background-video u-expanded u-video-contain" style="">
+        <div class="embed-responsive u-block-2530-3" style="position: absolute; width: 178%; left: -39%; height: 178%; top: -39%">
+            <video width="480" height="320" controls="controls" autoplay="autoplay">
+                <source src="@Url.Action("VideoStramingAPI", "GetVideoContent" , new { fileName = Model.MovieLocation})" type="video/mp4">
+            </video>
+         </div>
+    </div>
+    <div class="u-clearfix u-sheet u-block-2530-2" style="min-height: 903px"></div>
+    <style data-mode="XL" data-visited="true">
+        @@media (max-width: 0px) {
+            .u-block-2530-2 {
+                min-height: 903px
+            }
+
+            .u-block-2530-3 {
+                position: absolute;
+                width: 178%;
+                left: -39%;
+                height: 178%;
+                top: -39%
+            }
+        }
+    </style>
+    <style data-mode="LG">
+        @@media (max-width: 0px) {
+            .u-block-2530-2 {
+                min-height: 903px
+            }
+
+            .u-block-2530-3 {
+                position: absolute;
+                height: 178%;
+                width: 178%;
+                left: -39%;
+                top: -39%
+            }
+        }
+    </style>
+    <style data-mode="MD">
+        @@media (max-width: 0px) {
+            .u-block-2530-2 {
+                min-height: 903px
+            }
+
+            .u-block-2530-3 {
+                position: absolute;
+                height: 100%;
+                width: 223%;
+                left: -61%;
+                top: 0%
+            }
+        }
+    </style>
+    <style data-mode="SM">
+        @@media (max-width: 0px) {
+            .u-block-2530-2 {
+                min-height: 903px
+            }
+
+            .u-block-2530-3 {
+                position: absolute;
+                height: 100%;
+                width: 297%;
+                left: -99%;
+                top: 0%
+            }
+        }
+    </style>
+    <style data-mode="XS">
+        @@media (max-width: 0px) {
+            .u-block-2530-2 {
+                min-height: 903px
+            }
+
+            .u-block-2530-3 {
+                position: absolute;
+                height: 100%;
+                width: 472%;
+                left: -186%;
+                top: 0%
+            }
+        }
+    </style>
+</section>
